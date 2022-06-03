@@ -1,20 +1,10 @@
-An e-commerce company in the travel industry is modernizing their legacy browser-based software stack. While their existing stack is mostly monolithic, some [SOAP-based HTTP services][soap] exist from a recent project. They are considering the creation of additional revenue streams to monetize some of the internal intellectual property that's been developed.
-
-Goals for the project include addressing technical debt, improving ongoing maintenance, and accelerating feature development with fewer regression bugs. The project will use an iterative process to avoid risk, with some steps performed in parallel:
-
-- The development team will modernize the application back end, which is composed of relational databases hosted on VMs.
-- The in-house development team will write new business functionality that will be exposed over new HTTP APIs.
-- A contract development team will build a new browser-based UI, which will be hosted in Azure.
-
-New application features will be delivered in stages. These features will gradually replace the existing browser-based client-server UI functionality (hosted on-premises) that powers their e-commerce business today.
-
-The management team does not want to modernize unnecessarily. They also want to maintain control of scope and costs. To do this, they have decided to preserve their existing SOAP HTTP services. They also intend to minimize changes to the existing UI. [Azure API Management (APIM)][apim] can be used to address many of the project's requirements and constraints.
+The need for near full or full observability on a platform like K8s that can host thousands of microservices is becoming very important and some instances critical to operation excellence as well as for security perspective. At the same time the incorporation of event driven applications is also gaining a lot momentum. In this scenario we are going to present a solution that desires and/or requires both capabilities working together to deliver a very impactful outcome. Collect, view and react to KPIs from application and frontend traffic. Full observability of all type of traffic, East-West(app to app) and North-South(Ingress to web). One particular use case could be to autoscale based on http requests rate per minute your web frontend application, which is presented on the architecture.
 
 ## Architecture
 
 ![Architecture diagram][architecture]
 
-The new UI will be hosted as a platform as a service (PaaS) application on Azure, and will depend on both existing and new HTTP APIs. These APIs will ship with a better-designed set of interfaces enabling better performance, easier integration, and future extensibility.
+For this solution we are going to use 4 projects from the Cloud Native Computing Foundation (CNCF), Open Service Mesh(OSM), KEDA, Prometheus and Contour Ingress Controller. The OSM give us the capabilities for full observability and KEDA the event-driven applications.
 
 ### Workflow
 
