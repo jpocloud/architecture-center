@@ -30,6 +30,6 @@ products:
   - azure-application-insights
   - azure-monitor
   - azure-web-apps
-thumbnailUrl: /azure/architecture/browse/thumbs/architecture-apim-api-scenario.png
+thumbnailUrl: /azure/architecture/browse/thumbs/keda-osm-contour-scenario.png
 content: |
    [!include[](apim-api-scenario-content.md)]
