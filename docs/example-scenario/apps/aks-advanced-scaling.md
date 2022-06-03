@@ -67,7 +67,7 @@ Review the extensive Azure API Management [documentation and reference articles]
 
 <!-- links -->
 
-[architecture]: ./media/architecture-apim-api-scenario.png
+[architecture]: ./media/keda-osm-contour-scenario.png
 [apim-create]: /azure/api-management/get-started-create-service-instance
 [apim-multi-regions]: /azure/api-management/api-management-howto-deploy-multi-region
 [apim-autoscale]: /azure/api-management/api-management-howto-autoscale
